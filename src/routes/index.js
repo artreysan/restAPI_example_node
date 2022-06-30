@@ -1,5 +1,4 @@
 //Container of routes
-
 const { Router } = require('express'); //Desde express requiero el metodo llamado Router
 const router = Router();  //Cuando ejecuto Router(); lo guardo en un constante objeto llamado router
 

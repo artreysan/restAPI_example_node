@@ -1,4 +1,5 @@
 // Instancia de servidor
+const { application } = require('express');
 const express = require('express');
 const app = express();
 //Middleware
@@ -6,6 +7,13 @@ const morgan = require('morgan');
 
 //routes
 app.use(require('./routes/index.js')); //exportamos el objeto "router" de './routes/index.js'
+app.use('/api/movies',require('./routes/movies.js')); //exportamos el objeto "router" de './routes/index.js'
+                                                      /* cuando declaramos '/api/movies', lo que hacemos 
+                                                      de cierto modo es adjudicar una nueva ruta inicial 
+                                                      asi a partir de '/api/movies' es como si entraramos a '/'  
+                                                      y si entramos a '/api/movies/terror' en el archivo definiremos
+                                                      '/terror'
+                                                      */
 
 //settings
 app.set('port',process.env.PORT || 3000); //Definimos la variable port permanente 
