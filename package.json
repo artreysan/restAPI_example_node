@@ -1,0 +1,24 @@
+{
+  "name": "restapi_example_node",
+  "version": "1.0.0",
+  "description": "Mi primer RestAPI usando Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beartree-ars/restAPI_example_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beartree-ars/restAPI_example_node/issues"
+  },
+  "homepage": "https://github.com/beartree-ars/restAPI_example_node#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  }
+}
