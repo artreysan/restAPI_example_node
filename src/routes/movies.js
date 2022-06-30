@@ -9,4 +9,15 @@ router.get('/',(req,res)=>{
     res.json(movies);
 });
 
+router.post('/',(req,res)=>{ //Resive un objeto del cliente
+    const  {tittle, director, year, rating } = req.body;
+    if(tittle && director && year && rating){
+        res.json('saved');
+    }
+    else{
+        res.send('Wrong Request');
+    }
+    res.send('Received');
+});
+
 module.exports =router;
